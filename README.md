@@ -2,11 +2,11 @@
 
 ### List of mods (projects in VS solution)
 
-- Lifebelt [link](https://www.nexusmods.com/xxxx/mods/??? "link")
+- Lifebelt [link](https://www.nexusmods.com/encased/mods/7 "link")
 
 ### Requirements
-- Encased game extension [nexus](https://www.nexusmods.com/site/mods/44? "nexus")
-- BepInEx [link](https://github.com/BepInEx/BepInEx/releases "BepInEx 6.x x64")
+- Encased game extension [nexus](https://www.nexusmods.com/site/mods/454 "nexus")
+- BepInEx [link](https://github.com/BepInEx/BepInEx/releases "BepInEx UnityIL2CPP x64 6.x")
   (Bundled into Vortex extension)
 
 ### Build
