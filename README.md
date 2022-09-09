@@ -6,7 +6,7 @@
 
 ### Requirements
 - Encased game extension [nexus](https://www.nexusmods.com/site/mods/454 "nexus")
-- BepInEx [link](https://github.com/BepInEx/BepInEx/releases "BepInEx UnityIL2CPP x64 6.x")
+- BepInEx UnityIL2CPP x64 6.x [link](https://github.com/BepInEx/BepInEx/releases "BepInEx")
   (Bundled into Vortex extension)
 
 ### Build
