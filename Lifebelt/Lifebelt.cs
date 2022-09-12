@@ -2,6 +2,7 @@
 using DarkCrystal.Encased.Core;
 using DarkCrystal.Encased.Core.ModuleSystem;
 using Lifebelt.Configurations;
+using DarkCrystal.Encased.Core.RolePlay;
 
 namespace Lifebelt
 {
@@ -51,6 +52,18 @@ namespace Lifebelt
 					value = 0f;
 
 				return true; //run the orignal code
+			}
+		}
+
+		[HarmonyPatch(typeof(PocketThieveryAbilityHandler))]
+		[HarmonyPatch(nameof(PocketThieveryAbilityHandler.GetBlockReasons))]
+		internal class PocketThieveryAbilityHandler_GetBlockReasons_Patch
+		{
+			[HarmonyPostfix]
+			public static void Postfix(PocketThieveryAbilityHandler __instance, ref BlockReasons __result)
+			{
+				if ((__result == BlockReasons.TargetImmune) && Configuration.getInstance().isRepeatedPickpocketEnabled.Value)
+					__result = BlockReasons.None;
 			}
 		}
 

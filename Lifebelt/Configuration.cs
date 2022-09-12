@@ -25,6 +25,8 @@ namespace Lifebelt.Configurations
         public ConfigEntry<bool> isHungerDisabled { get; private set; }
         public ConfigEntry<bool> isThirstDisabled { get; private set; }
 
+        public ConfigEntry<bool> isRepeatedPickpocketEnabled { get; private set; }
+
 
         public Configuration(ConfigFile _config)
         {
@@ -36,6 +38,8 @@ namespace Lifebelt.Configurations
             isFatigueDisabled = config.Bind("General", "IsFatigueDisabled", true, "If enabled, all negative Fatigue status changes will be ignored.");
             isHungerDisabled = config.Bind("General", "IsHungerDisabled", true, "If enabled, all negative Hunger status changes will be ignored.");
             isThirstDisabled = config.Bind("General", "IsThirstDisabled", true, "If enabled, all negative Thirst status changes will be ignored.");
+
+            isRepeatedPickpocketEnabled = config.Bind("General", "IsRepeatedPickpocketEnabled", true, "If enabled, same target can be pickpocketed multiple times.");
 
         }
 

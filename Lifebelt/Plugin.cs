@@ -8,7 +8,7 @@ using BepInEx.Logging;
 namespace Lifebelt
 {
 
-    [BepInPlugin(GUID, "Lifebelt", "1.0.0")]
+    [BepInPlugin(GUID, "Lifebelt", "1.0.1")]
     public class Plugin : BasePlugin
     {
         private const string GUID = "blueskutya.encased.lifebelt";
